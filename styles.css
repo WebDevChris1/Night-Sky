@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sky{
+  background: linear-gradient(
+    0deg,
+    #FFCDCD, 
+    #FFCDCD, 
+    #70C3FC,
+    #090EA0,
+    #000000,
+    #000000
+    );
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.earth{
+  width: 120%;
+  height: 120vh;
+  background: green;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -95%;
+  left: 30%;
+}
