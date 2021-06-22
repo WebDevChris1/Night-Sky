@@ -20,7 +20,6 @@
     );
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 /* Earth */
@@ -190,5 +189,51 @@
   top: 15%;
   transform: rotate(17deg);
   border: 2px solid rgb(1, 34, 1);
+}
 
+/* Blanket */
+
+.blanket{
+  height: 40px;
+  width: 90px;
+  background-color: cornflowerblue;
+  position: absolute;
+  top: 0;
+  left: 43%;
+  border-radius: 2px;
+  position: relative;
+  transform: rotate(2deg);
+}
+
+.hline1{
+  background-color: rgb(141, 73, 73);;
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 15%;
+}
+
+.hline2{
+  background-color: rgb(141, 73, 73);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+}
+
+
+.vline1{
+background-color: rgb(141, 73, 73);
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: 15%;
+}
+
+.vline2{
+background-color: rgb(141, 73, 73);
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 20%;
 }
