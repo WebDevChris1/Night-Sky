@@ -34,23 +34,8 @@
   position: relative;
   overflow: hidden;
 }
+
 /* Shooting Stars */
-
-.shooting-stars {
-  height: 90%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.star {
-  width: 1px;
-  height: 95px;
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  position: absolute;
-}
 
 @keyframes animShootingStar {
   from {
@@ -63,6 +48,22 @@
     opacity: 1;
     height: 150px;
   }
+}
+
+.star {
+  width: 1px;
+  height: 95px;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+}
+
+.shooting-stars {
+  height: 90%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .one {
@@ -156,6 +157,7 @@
   z-index: 1;
   border-bottom: 2px solid #015d03;
 }
+
 .mid-leaves2 {
   width: 170px;
   height: 55px;
@@ -337,7 +339,7 @@
   width: 90px;
 }
 
-/* Man */
+/* Boy */
 .boy-head {
   height: 30px;
   width: 30px;
