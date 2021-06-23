@@ -52,39 +52,6 @@
   position: absolute;
 }
 
-.one {
-  top: 0;
-  left: 10%;
-  animation: animShootingStar 10s ease-in infinite;
-}
-
-.two {
-  top: 80%;
-  left: 10%;
-  animation: animShootingStar 15s ease-in infinite;
-}
-
-.three {
-  top: 0;
-  left: 60%;
-  animation: animShootingStar 20s ease-in infinite;
-}
-.four {
-  top: 40%;
-  right: 10%;
-  animation: animShootingStar 10s ease-in infinite;
-}
-.five {
-  top: 0;
-  left: 30%;
-  animation: animShootingStar 15s ease-in infinite;
-}
-.six {
-  top: 20%;
-  left: 10%;
-  animation: animShootingStar 20s ease-in infinite;
-}
-
 @keyframes animShootingStar {
   from {
     transform: translateY(0) translateX(0px) rotate(120deg);
@@ -96,6 +63,39 @@
     opacity: 1;
     height: 150px;
   }
+}
+
+.one {
+  top: 0;
+  left: 10%;
+  animation: animShootingStar 6s ease-in infinite;
+}
+
+.two {
+  top: 80%;
+  left: 10%;
+  animation: animShootingStar 8s ease-in infinite;
+}
+
+.three {
+  top: 0;
+  left: 60%;
+  animation: animShootingStar 10s ease-in infinite;
+}
+.four {
+  top: 40%;
+  right: 10%;
+  animation: animShootingStar 12s ease-in infinite;
+}
+.five {
+  top: 0;
+  left: 30%;
+  animation: animShootingStar 14s ease-in infinite;
+}
+.six {
+  top: 20%;
+  left: 10%;
+  animation: animShootingStar 16s ease-in infinite;
 }
 
 /* Earth */
@@ -267,7 +267,7 @@
 
 /* Blanket */
 
-/* .blanket{
+.blanket {
   height: 40px;
   width: 90px;
   background-color: cornflowerblue;
@@ -279,15 +279,15 @@
   transform: rotate(2deg);
 }
 
-.hline1{
-  background-color: rgb(141, 73, 73);;
+.hline1 {
+  background-color: rgb(141, 73, 73);
   height: 1px;
   width: 100%;
   position: absolute;
   top: 15%;
 }
 
-.hline2{
+.hline2 {
   background-color: rgb(141, 73, 73);
   height: 1px;
   width: 100%;
@@ -295,52 +295,140 @@
   bottom: 20%;
 }
 
-
-.vline1{
-background-color: rgb(141, 73, 73);
+.vline1 {
+  background-color: rgb(141, 73, 73);
   height: 100%;
   width: 1px;
   position: absolute;
   left: 15%;
 }
 
-.vline2{
-background-color: rgb(141, 73, 73);
+.vline2 {
+  background-color: rgb(141, 73, 73);
   height: 100%;
   width: 1px;
   position: absolute;
   right: 20%;
-} */
+}
 
 /* People */
 
-/* Man */
-/* .people{
+.people {
   height: 110px;
-  width: 90px;
-  border: 5px solid red;
+  width: 250px;
+  border: 1px solid red;
   z-index: 5;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
 }
 
-.head1{
+.boy {
+  height: 110px;
+  width: 90px;
+  /* border: 1px solid blue; */
+  position: relative;
+}
+
+.girl {
+  height: 110px;
+  width: 90px;
+  /* border: 1px solid green; */
+}
+
+/* Man */
+.boy-head {
   height: 30px;
   width: 30px;
   border-radius: 50%;
   background-color: rgb(170, 126, 69);
   overflow: hidden;
   position: relative;
+  transform: rotate(20deg);
+  z-index: 3;
+  left: 35%;
+  top: 25%;
 }
 
-.hair1{
+.boy-hair {
   height: 10px;
   width: 100%;
-  background-color: rgb(88, 40, 6);
+  background-color: rgb(51, 23, 3);
+  transform: rotate(40deg);
+  position: absolute;
+  right: -5px;
+  top: 1px;
+}
+
+.boy-mouth {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: rgb(184, 7, 7);
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  transform: rotate(30deg);
+}
+
+.boy-eye {
+  height: 5px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+
+.boy-body {
+  height: 40px;
+  width: 20px;
+  background-color: rgb(5, 104, 104);
+  border-radius: 30%;
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  z-index: 2;
+}
+
+.boy-right-leg {
+  height: 20px;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 48%;
+}
+
+.boy-left-leg {
+  height: 20px;
+  width: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+}
+
+.boy-left-arm {
+  height: 30px;
+  width: 2px;
+  background-color: black;
+  transform: rotate(130deg);
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  z-index: 4;
+}
+
+.boy-right-arm {
+  height: 30px;
+  width: 2px;
+  background-color: black;
   transform: rotate(-40deg);
   position: absolute;
-  left: -5px;
-  top: 1px;
-} */
+  right: 40%;
+  top: 60%;
+}
