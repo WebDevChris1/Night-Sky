@@ -20,6 +20,83 @@
     );
   height: 100vh;
   position: relative;
+  overflow: hidden;
+}
+
+/* Stars */
+.stars{
+  background-image: url(./images/stars.png);
+  z-index: 10;
+  height: 70%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+/* Shooting Stars */
+
+.shooting-stars{
+  height: 90%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.star{
+  width: 1px;
+  height: 95px;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+}
+
+.one{
+	top: 0;
+	left: 10%;
+  animation: animShootingStar 10s ease-in infinite;
+}
+
+.two{
+	top: 80%;
+	left: 10%;
+  animation: animShootingStar 15s ease-in infinite;
+}
+
+.three{
+	top: 0;
+	left: 60%;
+  animation: animShootingStar 20s ease-in infinite;
+}
+.four{
+	top: 40%;
+	right: 10%;
+  animation: animShootingStar 10s ease-in infinite;
+}
+.five{
+	top: 0;
+	left: 30%;
+  animation: animShootingStar 15s ease-in infinite;
+}
+.six{
+	top: 20%;
+	left: 10%;
+  animation: animShootingStar 20s ease-in infinite;
+}
+
+@keyframes animShootingStar {
+ from {
+ transform: translateY(0) translateX(0px) rotate(120deg);
+ opacity: 1;
+ height: 5px;
+}
+ to {
+ transform: translateY(1500px) translateX(2560px) rotate(120deg);
+ opacity: 1;
+ height: 150px;
+}
 }
 
 /* Earth */
@@ -237,3 +314,37 @@ background-color: rgb(141, 73, 73);
   position: absolute;
   right: 20%;
 }
+
+/* People */
+
+/* Man */
+/* .people{
+  height: 110px;
+  width: 90px;
+  border: 5px solid red;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.head1{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgb(170, 126, 69);
+  overflow: hidden;
+  position: relative;
+}
+
+.hair1{
+  height: 10px;
+  width: 100%;
+  background-color: rgb(88, 40, 6);
+  transform: rotate(-40deg);
+  position: absolute;
+  left: -5px;
+  top: 1px;
+} */
+
