@@ -1,6 +1,6 @@
 /* Root */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,23 +8,22 @@
 
 /* Sky */
 
-.sky{
+.sky {
   background: linear-gradient(
     0deg,
-    #FFCDCD, 
-    /* #FFCDCD,  */
-    #70C3FC,
-    #090EA0,
+    #ffcdcd,
+    /* #FFCDCD,  */ #70c3fc,
+    #090ea0,
     #000000,
     #000000
-    );
+  );
   height: 100vh;
   position: relative;
   overflow: hidden;
 }
 
 /* Stars */
-.stars{
+.stars {
   background-image: url(./images/stars.png);
   z-index: 10;
   height: 70%;
@@ -37,14 +36,14 @@
 }
 /* Shooting Stars */
 
-.shooting-stars{
+.shooting-stars {
   height: 90%;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.star{
+.star {
   width: 1px;
   height: 95px;
   background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white);
@@ -53,55 +52,55 @@
   position: absolute;
 }
 
-.one{
-	top: 0;
-	left: 10%;
+.one {
+  top: 0;
+  left: 10%;
   animation: animShootingStar 10s ease-in infinite;
 }
 
-.two{
-	top: 80%;
-	left: 10%;
+.two {
+  top: 80%;
+  left: 10%;
   animation: animShootingStar 15s ease-in infinite;
 }
 
-.three{
-	top: 0;
-	left: 60%;
+.three {
+  top: 0;
+  left: 60%;
   animation: animShootingStar 20s ease-in infinite;
 }
-.four{
-	top: 40%;
-	right: 10%;
+.four {
+  top: 40%;
+  right: 10%;
   animation: animShootingStar 10s ease-in infinite;
 }
-.five{
-	top: 0;
-	left: 30%;
+.five {
+  top: 0;
+  left: 30%;
   animation: animShootingStar 15s ease-in infinite;
 }
-.six{
-	top: 20%;
-	left: 10%;
+.six {
+  top: 20%;
+  left: 10%;
   animation: animShootingStar 20s ease-in infinite;
 }
 
 @keyframes animShootingStar {
- from {
- transform: translateY(0) translateX(0px) rotate(120deg);
- opacity: 1;
- height: 5px;
-}
- to {
- transform: translateY(1500px) translateX(2560px) rotate(120deg);
- opacity: 1;
- height: 150px;
-}
+  from {
+    transform: translateY(0) translateX(0px) rotate(120deg);
+    opacity: 1;
+    height: 5px;
+  }
+  to {
+    transform: translateY(1500px) translateX(2560px) rotate(120deg);
+    opacity: 1;
+    height: 150px;
+  }
 }
 
 /* Earth */
 
-.earth{
+.earth {
   width: 120%;
   height: 120vh;
   background: rgb(4, 102, 4);
@@ -115,7 +114,7 @@
 
 /* Trees */
 
-.leaf{
+.leaf {
   z-index: 1;
   background-color: #009703;
   position: absolute;
@@ -126,23 +125,22 @@
 }
 
 /* Tree One */
-.bottom-leaves1{
+.bottom-leaves1 {
   width: 205px;
   height: 55px;
   bottom: 30%;
   right: -9%;
   border-bottom: 2px solid #015d03;
-
 }
 
-.mid-leaves1{
+.mid-leaves1 {
   width: 170px;
   height: 55px;
   bottom: 36%;
   right: -8%;
 }
 
-.top-leaves1{
+.top-leaves1 {
   width: 100px;
   height: 45px;
   bottom: 42%;
@@ -150,7 +148,7 @@
 }
 
 /* Tree Two */
-.bottom-leaves2{
+.bottom-leaves2 {
   width: 210px;
   height: 60px;
   bottom: 28%;
@@ -158,7 +156,7 @@
   z-index: 1;
   border-bottom: 2px solid #015d03;
 }
-.mid-leaves2{
+.mid-leaves2 {
   width: 170px;
   height: 55px;
   bottom: 35%;
@@ -166,7 +164,7 @@
   z-index: 2;
 }
 
-.top-leaves2{
+.top-leaves2 {
   width: 100px;
   height: 45px;
   bottom: 41%;
@@ -174,7 +172,7 @@
   z-index: 3;
 }
 
-.tip-leaves2{
+.tip-leaves2 {
   width: 50px;
   height: 25px;
   bottom: 46%;
@@ -183,28 +181,28 @@
 }
 
 /* Tree Three */
-.bottom-leaves3{
+.bottom-leaves3 {
   width: 210px;
   height: 60px;
   bottom: -6%;
   right: 5.5%;
 }
 
-.mid-leaves3{
+.mid-leaves3 {
   width: 170px;
   height: 55px;
   bottom: 1%;
   right: 6.5%;
 }
 
-.top-leaves3{
+.top-leaves3 {
   width: 100px;
   height: 45px;
   bottom: 7%;
   right: 8.8%;
 }
 
-.tip-leaves3{
+.tip-leaves3 {
   width: 50px;
   height: 25px;
   bottom: 11.5%;
@@ -213,21 +211,21 @@
 }
 
 /* Tree Four */
-.mid-leaves4{
+.mid-leaves4 {
   width: 170px;
   height: 55px;
   bottom: -5%;
   right: -3%;
 }
 
-.top-leaves4{
+.top-leaves4 {
   width: 100px;
   height: 45px;
   bottom: 1%;
   right: -0.1%;
 }
 
-.tip-leaves4{
+.tip-leaves4 {
   width: 50px;
   height: 25px;
   bottom: 5.5%;
@@ -235,30 +233,29 @@
   z-index: 4;
 }
 
-
 /* Trunk */
-.trunk{
+.trunk {
   background-color: #4e0100;
   border: 2px solid black;
-  position: absolute; 
+  position: absolute;
   height: 80px;
   width: 30px;
   border-radius: 5px;
 }
 
-.trunk1{
+.trunk1 {
   right: -1.5%;
   bottom: 21%;
 }
 
-.trunk2{
+.trunk2 {
   bottom: 18%;
   right: 9.3%;
 }
 
 /* Road */
 
-.road{
+.road {
   background-color: rgb(226, 186, 133);
   width: 100%;
   height: 80px;
@@ -270,7 +267,7 @@
 
 /* Blanket */
 
-.blanket{
+/* .blanket{
   height: 40px;
   width: 90px;
   background-color: cornflowerblue;
@@ -313,7 +310,7 @@ background-color: rgb(141, 73, 73);
   width: 1px;
   position: absolute;
   right: 20%;
-}
+} */
 
 /* People */
 
@@ -347,4 +344,3 @@ background-color: rgb(141, 73, 73);
   left: -5px;
   top: 1px;
 } */
-
